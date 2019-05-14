@@ -1,4 +1,7 @@
 from django.shortcuts import render
 
-def post_list(request):
-    return render(request, 'cerp/post_list.html', {})
+def login(request):
+    return render(request, 'cerp/login.html', {})
+
+def base(request):
+    return render(request, 'cerp/base.html', {})
