@@ -76,8 +76,14 @@ WSGI_APPLICATION = 'csite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cworks',  #mysql
+        'USER': 'root', #root
+        'PASSWORD': 'corein', #1234
+        'HOST': 'localhost', #공백으로 냅두면 default localhost
+        'PORT': '3307' #공백으로 냅두면 default 3306
     }
 }
 
