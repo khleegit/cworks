@@ -5,3 +5,6 @@ def login(request):
 
 def base(request):
     return render(request, 'cerp/base.html', {})
+
+def counsel(request):
+    return render(request, 'cerp/counsel.html', {})
